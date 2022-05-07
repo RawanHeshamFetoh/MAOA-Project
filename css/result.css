@@ -1,0 +1,30 @@
+body{
+    background-image: url(../images/result.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+.card{
+  width: 400px;
+  height: 250px;
+  background-color: rgba(205, 204, 173, 0.399);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 2px;
+}
+h3{
+  text-transform: uppercase;
+  text-shadow: 1px 3px 3px white;
+}
+
+p{
+   text-transform: uppercase;
+    text-align:center;
+    position: relative;
+    font-size: 35px;
+    text-shadow: 3px 3px 3px white;
+
+}

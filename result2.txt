@@ -1,0 +1,38 @@
+from result import regressor
+import cgi
+import numpy
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+
+
+form = cgi.FieldStorage()
+id = numpy.float32(form.getvalue("id"))
+WAVE = numpy.float32(form.getvalue("wave"))
+COLWEEKC = numpy.float32(form.getvalue("COLWEEKC"))
+TIMEPOINT = numpy.float32(form.getvalue("TIMEPOINT"))
+RCT_ARM = numpy.float32(form.getvalue("RCT_ARM"))
+SITE_t1 = numpy.float32(form.getvalue("SITE_t1"))
+GENDER_t1 = numpy.float32(form.getvalue("GENDER_t1"))
+AGE_WAVE = numpy.float32(form.getvalue("AGE_WAVE"))
+TECTOT = numpy.float32(form.getvalue("TECTOT"))
+HINSECURITY = numpy.float32(form.getvalue("HINSECURITY"))
+HDISTRESS = numpy.float32(form.getvalue("HDISTRESS"))
+PSSTOT = numpy.float32(form.getvalue("PSSTOT"))
+AYMHTOT = numpy.float32(form.getvalue("AYMHTOT"))
+SDQtot = numpy.float32(form.getvalue("SDQtot"))
+prosoc = numpy.float32(form.getvalue("prosoc"))
+CRIESTOT = numpy.float32(form.getvalue("CRIESTOT"))
+NewCYRM12 = numpy.float32(form.getvalue("NewCYRM12"))
+MAOA_Allele1 = numpy.float32(form.getvalue("MAOA_Allele1"))
+MAOA_Allele2 = numpy.float32(form.getvalue("MAOA_Allele2"))
+
+input_data = [id, WAVE, COLWEEKC, TIMEPOINT, RCT_ARM, SITE_t1, GENDER_t1, AGE_WAVE, TECTOT, HINSECURITY, HDISTRESS, PSSTOT, AYMHTOT, SDQtot, CRIESTOT, NewCYRM12, MAOA_Allele1, MAOA_Allele2]
+
+new_input_data = numpy.reshape(input_data, (1, -1))
+# new_input_data=new_input_data[0][1:].astype(float)
+# print(new_input_data)
+
+res = regressor.predict(new_input_data)
+print(res)

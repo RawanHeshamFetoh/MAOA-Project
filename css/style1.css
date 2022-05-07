@@ -1,0 +1,101 @@
+.navbar{
+  background-color: rgb(231, 230, 230);
+
+}
+
+
+.active {
+  
+  color: white;
+}
+.active h1{
+  color: rgb(58, 58, 58);
+
+}
+.active img{
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.active img, .navbar h1 {
+    float: left;
+}
+.a{
+    margin-top: 10px;
+    margin-left: 10px;
+   
+}
+.header{
+  height: 500px;
+  width: 100%;
+  background-image: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+.header h1{
+  position: absolute;
+  top: 80%;
+  font-size: 50px;
+  font-family:cursive;
+  left: 4%;
+  color: rgb(182, 179, 179);
+  text-shadow: 2px 2px 5px gray;
+}
+.def{
+  position: absolute;
+  top: 65%;
+  color: whitesmoke;
+  margin-left: 20px;
+  width: 300px;
+  height: 300px;
+  font-family:cursive;
+  left: 6%;
+}
+.learn{
+  position: absolute;
+  top: 94%;
+  left: 8%;
+  border: none;
+  background-color: rgb(182, 179, 179);
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  color: rgb(58, 58, 58);
+  font-weight: bold;
+}
+footer{
+  margin-top: 1000px;
+}
+.werrior{
+  height: 200px;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+.w{
+  font-size: 50px;
+  margin-top: 70px;
+  margin-left: 100px;
+  color: white;
+  font-family: cursive;
+
+}
+
+.ii{
+  float: left;
+}
+.ii li{
+  float: left;
+  margin-left: 10px;
+  color: blueviolet;
+}
+.ii li a{
+  text-decoration: none;
+   float: left;
+}
+
